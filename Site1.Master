@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="LISP.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="datatables/css/jquery.dataTables.min.css"/>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fontawesome/css/all.css"/>
+    <link rel="stylesheet" href="css/poppins.css"/>
+
+
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <!-- Nav Bar -->
+
+            <section class="header">
+               
+                <nav><div class="icons">
+                    <a href="Homepage.aspx"><img src="imgs/logo11.png" /></a></div>
+                    <div class="nav-links" id="navlink" runat="server">
+                        <i class="fa fa-times" onclick="hidemenu()"></i>
+                        <ul>
+                            <li id="pLinkButton7" runat="server">
+                                <asp:LinkButton ID="LinkButton7" runat="server" OnClick="LinkButton7_Click"><h6>Packages</h6></asp:LinkButton>
+                            </li>
+
+                            <li id="pLinkButton13" runat="server">
+                                <asp:LinkButton ID="LinkButton13" runat="server" OnClick="LinkButton13_Click"><h6>Billpay</h6></asp:LinkButton>
+                            </li>
+
+                            <li id="pLinkButton8" runat="server">
+                                <asp:LinkButton  ID="LinkButton8" runat="server" OnClick="LinkButton8_Click"><h6>Login</h6></asp:LinkButton>
+                            </li>
+                            <li id="pLinkButton9" runat="server">
+                                <asp:LinkButton  ID="LinkButton9" runat="server" OnClick="LinkButton9_Click"><h6>Signup</h6></asp:LinkButton>
+                            </li>
+                            <li id="pLinkButton10" runat="server">
+                                <asp:LinkButton  ID="LinkButton10" runat="server" OnClick="LinkButton10_Click"><h6>Hello User</h6></asp:LinkButton>
+                            </li>
+
+                            <li id="pLinkButton11" runat="server">
+                                <asp:LinkButton  ID="LinkButton11" runat="server"  OnClick="LinkButton11_Click"><h6>Hello Admin</h6></asp:LinkButton>
+
+                            </li>
+
+            
+
+                            <li id="pLinkButton12" runat="server">
+                                <asp:LinkButton  ID="LinkButton12" runat="server" OnClick="LinkButton12_Click"><h6>Logout</h6></asp:LinkButton>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showmenu()"></i>
+                </nav>
+            </section>
+
+
+
+
+
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton class="footerlinks" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Admin Login  </asp:LinkButton>  &nbsp;&nbsp;
+                            
+                            <asp:LinkButton class="footerlinks" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" Visible="False">Package Management</asp:LinkButton>  &nbsp;&nbsp;
+                            
+                            <asp:LinkButton class="footerlinks" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" Visible="False">User Management</asp:LinkButton>  &nbsp;&nbsp;
+                            
+                            <asp:LinkButton class="footerlinks" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" Visible="False">Subscriber Management</asp:LinkButton>  &nbsp;&nbsp;
+                            
+                            <asp:LinkButton class="footerlinks" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click" Visible="False">Pending</asp:LinkButton>  &nbsp;&nbsp;
+                            
+                             <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click" Visible="False">Payments</asp:LinkButton>  &nbsp;&nbsp;
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <section class="footer">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <a href="http://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="http://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="http://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="http://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+
+
+                <h5>©2021 All rights reserved by Sajidul Islam</h5>
+
+            </section>
+
+        </div>
+
+        <!-- JavaScript for toggle menu -->
+
+        <script>
+            var navl = document.getElementById("navlink");
+
+            function showmenu() {
+                navl.style.right = "0";
+            }
+            function hidemenu() {
+                navl.style.right = "-200px";
+            }
+        </script>
+    </form>
+</body>
+</html>

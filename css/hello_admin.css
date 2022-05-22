@@ -1,0 +1,36 @@
+﻿.h_admin{
+    text-decoration:none;
+    outline:none;
+    width:300px;
+    height:35px;
+    border-radius:3px;
+    
+}
+
+.h_admin:hover{
+    border:solid 3px green;
+    
+}
+
+    .h_admin:focus{
+        border: solid 3px green;
+        
+    }
+
+.ad_button{
+    text-decoration:none;
+    outline:none;
+    width:100px;
+    height:40px;
+    background-color:white;
+    color:black;
+    border:2px solid green;
+    border-radius:5px;
+}
+
+.ad_button:hover{
+    border:3px solid green;
+}
+.ad_button:focus{
+    background-color:green;
+}
