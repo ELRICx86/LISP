@@ -6,13 +6,15 @@ This is a project made in my 3rd year of university web development course.
 In this project I mainly create a web application to manage a ISP.
 
 This Project Include:
+
+
+
                 USER Section:
                         1.User Registration.
                         2.User Signup.
                         3.Package View.
                         4.Billpay Section.
-                        5.Profile Update with subscribed package list.
-                
+                        5.Profile Update with subscribed package list.     
                Admin Section:
                          1.User Management.
                          2.User Authentication/Approval.
